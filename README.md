@@ -6,8 +6,11 @@ This project implements a production-oriented scam detection system combining in
 
 > Designed with AI research rigor and systems thinking, aligned with applied ML best practices.
 
+📄 **[Read the full research paper](docs/RESEARCH_PAPER.md)** — *An Interpretable Multi-Signal Scam Detection System Using Machine Learning and Large Language Models*
+
 ## Table of Contents
 
+- [Research Paper](#research-paper)
 - [Problem Statement](#-problem-statement)
 - [System Overview](#-system-overview)
 - [Repository Structure](#-repository-structure)
@@ -30,6 +33,25 @@ This project implements a production-oriented scam detection system combining in
 - [What This Demonstrates](#-what-this-project-demonstrates)
 - [Future Extensions](#-future-extensions)
 - [Contributing](#contributing)
+
+## Research Paper
+
+📄 **[An Interpretable Multi-Signal Scam Detection System Using Machine Learning and Large Language Models](docs/RESEARCH_PAPER.md)**
+
+This project is accompanied by a formal research paper that details:
+- Problem formulation and optimization objectives
+- Feature engineering methodology with mathematical notation
+- Model architecture and calibration techniques
+- Evaluation methodology emphasizing recall for security
+- Explainability analysis using coefficient-based attribution
+- LLM integration strategy for semantic validation
+- Ensemble decision framework
+- Deployment architecture for production systems
+- Limitations and comprehensive future work
+
+**Key Quote for Research Presentations:**
+
+> "I focused on **interpretable ML for security**. I designed explicit features, trained a linear classifier, analyzed feature contributions, and embedded the model into a multi-signal safety system rather than treating ML as a black box. The emphasis is on explainability, precision-recall trade-offs, and production-ready deployment — demonstrating **end-to-end ML ownership**, not just API usage."
 
 ## 🔍 Problem Statement
 
@@ -89,8 +111,11 @@ scam-detection/
 ├── backend/ (Future)
 │   └── security.js                 # Production Node.js security pipeline
 │
+├── docs/
+│   └── RESEARCH_PAPER.md           # Academic paper on system design
+│
 ├── .gitignore                      # Excludes __pycache__, *.pkl
-└── README.md                       # This file
+└── README.md                       # This file (project overview)
 ```
 
 **Architecture Philosophy:**
@@ -98,6 +123,7 @@ scam-detection/
 This separation reflects real ML system design:
 - **ML lifecycle** isolated and testable
 - **Backend** consumes ML as a service
+- **Documentation** includes formal research paper
 - Clean boundaries enable independent scaling
 
 ## Key Features
@@ -888,15 +914,20 @@ Year: 2025
 
 ## 📚 References & Further Reading
 
+### This Project
+- **[Research Paper](docs/RESEARCH_PAPER.md)** — Full academic treatment of the system
+- **[Feature Engineering](feature_extractor.py)** — Implementation details
+- **[Model Training](train_model.py)** — Training pipeline code
+
 ### Academic Papers
-- [Phishing Detection using Machine Learning](https://example.com)
-- [Explainable AI for Security](https://example.com)
+- Fette et al. (2007) — Learning to detect phishing emails
+- Lundberg & Lee (2017) — SHAP: Unified approach to model interpretability
+- Ribeiro et al. (2016) — LIME: Model-agnostic explanations
+- Iyer et al. (2023) — Llama Guard: LLM-based safety
 
 ### Industry Resources
 - [OWASP Phishing Guide](https://owasp.org)
 - [Google Safe Browsing](https://safebrowsing.google.com)
-
-### Related Projects
 - [URLhaus Abuse Tracker](https://urlhaus.abuse.ch)
 - [PhishTank Community](https://phishtank.org)
 
