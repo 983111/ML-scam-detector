@@ -1,7 +1,7 @@
 # An Interpretable Multi-Signal Scam Detection System Using Machine Learning and Large Language Models
 
 **Author**: Vishwajeet Adkine  
-**Affiliation**: [Your Institution/Independent Research]  
+**Affiliation**: [Independent Research]  
 **Date**: February 2025  
 **Keywords**: Scam Detection, Interpretable ML, LLM Safety, Ensemble Systems, Feature Engineering
 
