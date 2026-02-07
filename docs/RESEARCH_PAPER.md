@@ -475,7 +475,7 @@ def extract_features(text, manual_score):
 
 ---
 
-**For MBZUAI / Research Presentation**:
+**For Research Presentation**:
 
 > "I focused on **interpretable ML for security**. I designed explicit features, trained a linear classifier, analyzed feature contributions, and embedded the model into a multi-signal safety system rather than treating ML as a black box. The emphasis is on explainability, precision-recall trade-offs, and production-ready deployment — demonstrating end-to-end ML ownership, not just API usage."
 
