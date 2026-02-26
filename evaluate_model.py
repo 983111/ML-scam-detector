@@ -201,6 +201,7 @@ lr.fit(X_train, y_train)
 coefs = lr.coef_[0]
 
 feature_labels = [
+<<<<<<< HEAD
     'has_urgency', 'has_money', 'has_sensitive', 'has_off_platform',
     'has_threat', 'has_legitimacy_marker',
     'text_length', 'exclamation_count', 'question_count',
@@ -209,6 +210,12 @@ feature_labels = [
     'urgency_density', 'money_density', 'sensitive_density',
     'num_urls', 'url_density',
     'ip_url', 'url_shortener', 'risky_tld', 'domain_spoof', 'verified_domain'
+=======
+    'Urgency (f1)', 'Money (f2)', 'Sensitive (f3)', 'Off-Platform (f4)',
+    'Text Length (f5)', 'Exclamations (f6)', 'Uppercase Ratio (f7)', 'Digit Ratio (f8)',
+    'Num URLs (f9)', 'URL Ratio (f10)', 'IP URL (f11)', 'URL Shortener (f12)',
+    'Risky TLD (f13)', 'Domain Spoof (f14)', 'Verified Domain (f15)', 'Manual Score (f16)'
+>>>>>>> fe065bb089ed369fb5a44cc368a6ed27630f21da
 ]
 
 sorted_idx = np.argsort(coefs)
